@@ -1,0 +1,48 @@
+
+PLAY ***************************************************************************
+
+TASK [role-dependent : Bool, good, true] ***************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_bool_good_true": "true"
+}
+
+TASK [role-dependent : Bool, good, false] **************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_bool_good_false": "false"
+}
+
+TASK [role-dependent : Bool, bad, true] ****************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_bool_bad_true": {}
+}
+
+TASK [role-dependent : Bool, bad, false] ***************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_bool_bad_false": {}
+}
+
+TASK [role-dependent : String, good, true] *************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_string_true": "true"
+}
+
+TASK [role-dependent : String, good, false] ************************************
+ok: [localhost] => {
+    "changed": false, 
+    "dependent_string_false": "false"
+}
+
+TASK [role-main : Main role] ***************************************************
+ok: [localhost] => {
+    "changed": false, 
+    "msg": "End of test"
+}
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=7    changed=0    unreachable=0    failed=0   
+

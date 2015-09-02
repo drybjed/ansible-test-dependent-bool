@@ -1,0 +1,5 @@
+---
+
+- name: Main role
+  debug: msg="End of test"
+

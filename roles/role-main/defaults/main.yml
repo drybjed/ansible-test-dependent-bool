@@ -1,0 +1,10 @@
+---
+
+role_bool_true: True
+
+role_bool_false: False
+
+role_string_true: 'true'
+
+role_string_false: 'false'
+

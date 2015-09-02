@@ -1,0 +1,14 @@
+---
+
+dependencies:
+
+  - role: role-dependent
+    dependent_bool_good_true:  'true'
+    dependent_bool_good_false: 'false'
+
+    dependent_bool_bad_true:  '{{ role_bool_true }}'
+    dependent_bool_bad_false: '{{ role_bool_false }}'
+
+    dependent_string_true:  '{{ role_string_true }}'
+    dependent_string_false: '{{ role_string_false }}'
+

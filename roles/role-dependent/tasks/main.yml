@@ -1,0 +1,20 @@
+---
+
+- name: Bool, good, true
+  debug: var=dependent_bool_good_true
+
+- name: Bool, good, false
+  debug: var=dependent_bool_good_false
+
+- name: Bool, bad, true
+  debug: var=dependent_bool_bad_true
+
+- name: Bool, bad, false
+  debug: var=dependent_bool_bad_false
+
+- name: String, good, true
+  debug: var=dependent_string_true
+
+- name: String, good, false
+  debug: var=dependent_string_false
+
